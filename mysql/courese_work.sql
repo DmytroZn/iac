@@ -19,16 +19,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `courese_work`
+-- База данных: `coursework`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `courese_work`
+-- Структура таблицы `coursework`
 --
 
-CREATE TABLE `courese_work` (
+CREATE TABLE `coursework` (
   `id` int(6) UNSIGNED NOT NULL,
   `firstname` varchar(30) NOT NULL,
   `lastname` varchar(30) NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `courese_work` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `courese_work`
+-- Дамп данных таблицы `coursework`
 --
 
-INSERT INTO `courese_work` (`id`, `firstname`, `lastname`, `email`, `reg_date`) VALUES
+INSERT INTO `coursework` (`id`, `firstname`, `lastname`, `email`, `reg_date`) VALUES
 (1, 'Dmytro', 'Znak', 'dmytro.zn@gmail.com', '2021-10-07 15:07:07');
 
 --
@@ -48,9 +48,9 @@ INSERT INTO `courese_work` (`id`, `firstname`, `lastname`, `email`, `reg_date`) 
 --
 
 --
--- Индексы таблицы `courese_work`
+-- Индексы таблицы `coursework`
 --
-ALTER TABLE `courese_work`
+ALTER TABLE `coursework`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -58,9 +58,9 @@ ALTER TABLE `courese_work`
 --
 
 --
--- AUTO_INCREMENT для таблицы `courese_work`
+-- AUTO_INCREMENT для таблицы `coursework`
 --
-ALTER TABLE `courese_work`
+ALTER TABLE `coursework`
   MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
