@@ -16,10 +16,10 @@ provider "kubernetes" {
 
 module "my-cluster" {
   source          = "terraform-aws-modules/eks/aws"
-  cluster_name    = "courese_work-eks"
+  cluster_name    = "lesson12-eks"
   cluster_version = "1.18"
-  subnets         = [aws_subnet.courese_work-subnet-public-1.id, aws_subnet.courese_work-subnet-public-2.id]
-  vpc_id          = aws_vpc.courese_work-vpc.id
+  subnets         = [aws_subnet.lesson12-subnet-public-1.id, aws_subnet.lesson12-subnet-public-2.id]
+  vpc_id          = aws_vpc.lesson12-vpc.id
 
   worker_groups = [
     {
@@ -27,13 +27,13 @@ module "my-cluster" {
       instance_type                 = "t2.small"
       asg_desired_capacity          = 2
       root_volume_type = "gp2"
-      additional_security_group_ids = [aws_security_group.courese_work-all.id]
+      additional_security_group_ids = [aws_security_group.lesson12-all.id]
     },
     {
       name                          = "worker-group-2"
       instance_type                 = "t2.medium"
       root_volume_type = "gp2"
-      additional_security_group_ids = [aws_security_group.courese_work-all.id]
+      additional_security_group_ids = [aws_security_group.lesson12-all.id]
       asg_desired_capacity          = 1
     },
   ]

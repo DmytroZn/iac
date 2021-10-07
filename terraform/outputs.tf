@@ -1,6 +1,6 @@
 output "rds_endpoint" {
   description = "The address of the RDS instance"
-  value       = aws_db_instance.courese_work-rds.endpoint
+  value       = aws_db_instance.lesson12-rds.endpoint
 }
 
 output "eks_endpoint" {
