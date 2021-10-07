@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 16 2021 г., 09:24
+-- Время создания: Жов 07 2021 г., 15:07
 -- Версия сервера: 10.2.17-MariaDB-log
 -- Версия PHP: 7.3.26
 
@@ -19,16 +19,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `lesson12`
+-- База данных: `courese_work`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `lesson12`
+-- Структура таблицы `courese_work`
 --
 
-CREATE TABLE `lesson12` (
+CREATE TABLE `courese_work` (
   `id` int(6) UNSIGNED NOT NULL,
   `firstname` varchar(30) NOT NULL,
   `lastname` varchar(30) NOT NULL,
@@ -37,20 +37,20 @@ CREATE TABLE `lesson12` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `lesson12`
+-- Дамп данных таблицы `courese_work`
 --
 
-INSERT INTO `lesson12` (`id`, `firstname`, `lastname`, `email`, `reg_date`) VALUES
-(1, 'Nicky', 'Lemeshko', 'admin@mdsn.tk', '2021-02-16 07:23:39');
+INSERT INTO `courese_work` (`id`, `firstname`, `lastname`, `email`, `reg_date`) VALUES
+(1, 'Dmytro', 'Znak', 'dmytro.zn@gmail.com', '2021-10-07 15:07:07');
 
 --
 -- Индексы сохранённых таблиц
 --
 
 --
--- Индексы таблицы `lesson12`
+-- Индексы таблицы `courese_work`
 --
-ALTER TABLE `lesson12`
+ALTER TABLE `courese_work`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -58,9 +58,9 @@ ALTER TABLE `lesson12`
 --
 
 --
--- AUTO_INCREMENT для таблицы `lesson12`
+-- AUTO_INCREMENT для таблицы `courese_work`
 --
-ALTER TABLE `lesson12`
+ALTER TABLE `courese_work`
   MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 

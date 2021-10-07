@@ -1,4 +1,4 @@
-- name: Lesson12
+- name: courese_work
   gather_facts: false
   hosts: [all]
   become: yes
