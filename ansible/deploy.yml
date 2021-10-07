@@ -1,4 +1,4 @@
-- name: lesson12
+- name: coursework
   gather_facts: false
   hosts: [all]
   become: yes
